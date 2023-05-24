@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 DATA = {
@@ -18,6 +19,19 @@ DATA = {
     },
     # можете добавить свои рецепты ;)
 }
+
+
+def recipes_cal(requests, recipe):
+    count = requests.GET.get('servings', 1)
+    recipes = DATA.get(recipe)
+
+    for recipe in recipes:
+        recipes[recipe] *= round(int(count), 2)
+
+    context = {
+        'recipe': recipes
+    }
+    return render(requests, 'calculator/index.html', context)
 
 # Напишите ваш обработчик. Используйте DATA как источник данных
 # Результат - render(request, 'calculator/index.html', context)
