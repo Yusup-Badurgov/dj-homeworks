@@ -15,7 +15,7 @@ def show_catalog(request):
     if sort == 'max_price':
         phones = Phone.objects.order_by('-price')
     elif sort == 'min_price':
-        phones = Phone.objects.order_by('min_price')
+        phones = Phone.objects.order_by('price')
     elif sort == 'name':
         phones = Phone.objects.order_by('name')
     else:
