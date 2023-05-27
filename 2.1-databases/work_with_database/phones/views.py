@@ -14,7 +14,7 @@ def show_catalog(request):
     # Возвращаю  отсортированные данные согласно указанному в get параметре фильтру
     if sort == 'max_price':
         phones = Phone.objects.order_by('-price')
-    elif sort == 'max_price':
+    elif sort == 'min_price':
         phones = Phone.objects.order_by('min_price')
     elif sort == 'name':
         phones = Phone.objects.order_by('name')
