@@ -4,17 +4,89 @@
     "pk": 1,
     "fields": {
       "name": "Война и мир",
-      "author": "Ф.Д. Достоевский",
-      "pub_date": "2018-02-27"
+      "author": "Лев Толстой",
+      "pub_date": "1869-01-01"
     }
   },
   {
     "model": "books.book",
     "pk": 2,
     "fields": {
-      "name": "1984",
-      "author": "Джордж Оруэл",
-      "pub_date": "2016-12-06"
+      "name": "Преступление и наказание",
+      "author": "Фёдор Достоевский",
+      "pub_date": "1866-01-01"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Гордость и предубеждение",
+      "author": "Джейн Остин",
+      "pub_date": "1813-01-01"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Мастер и Маргарита",
+      "author": "Михаил Булгаков",
+      "pub_date": "1967-01-01"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Улисс",
+      "author": "Джеймс Джойс",
+      "pub_date": "1922-01-01"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "Гарри Поттер и Философский камень",
+      "author": "Джоан Роулинг",
+      "pub_date": "1997-06-26"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "name": "Алиса в Стране чудес",
+      "author": "Льюис Кэрролл",
+      "pub_date": "1865-11-26"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "name": "Три товарища",
+      "author": "Эрих Мария Ремарк",
+      "pub_date": "1936-01-01"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 9,
+    "fields": {
+      "name": "Маленький принц",
+      "author": "Антуан де Сент-Экзюпери",
+      "pub_date": "1943-04-06"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 10,
+    "fields": {
+      "name": "Властелин колец",
+      "author": "Дж.Р.Р. Толкин",
+      "pub_date": "1954-07-29"
     }
   }
 ]

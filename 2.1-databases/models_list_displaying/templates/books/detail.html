@@ -8,13 +8,21 @@
             <h1><a href="/books">Каталог</a></h1>
         </div>
         <div class="row">
-            {% for book in books %}
             <div class="book col-md-4">
                 <h2><a href="/books/{{ book.pub_date|date:'Y-m-d' }}">{{ book.name }}</a></h2>
                 <p>Автор: {{ book.author }}</p>
                 <p>Дата публикации: {{ book.pub_date|date:'Y-m-d' }}</p>
+
+                {% if pre_page %}
+                <a href="{% url 'detail_book_view' pub_date=pre_page.pub_date|date:'Y-m-d' %}"><- {{ pre_page.pub_date|date:'Y-m-d' }}</a>&nbsp&nbsp
+                {% endif %}
+
+                {% if next_page %}
+                <a href="{% url 'detail_book_view' pub_date=next_page.pub_date|date:'Y-m-d' %}">  {{ next_page.pub_date|date:'Y-m-d' }} -></a>
+                {% endif %}
+
+
             </div>
-            {% endfor %}
         </div>
     </div>
 {% endblock %}
